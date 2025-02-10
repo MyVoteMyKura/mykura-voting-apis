@@ -25,7 +25,7 @@ MyKura APIs are built using The laravel Framework(v11.41.2), checkout  [document
 
 ## Sponsoring
 
-We would like to invite sponsors for funding MyKura development. If you are interested in becoming a sponsor, please contact @gwatai trough [MyKura's website](https://myvotemykura.co.ke) contact page or by emailing gwatainicholas@gmail.com.
+We would like to invite sponsors for funding MyKura development. If you are interested in becoming a sponsor, please contact @gwatai trough [MyKura's website](https://myvotemykura.co.ke) contact page or by emailing nicholas@myvotemykura.co.ke
 
 ### Premium Partners
 
@@ -49,7 +49,7 @@ To ensure that the Laravel community is welcoming to all, please adhere to Peace
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within MyKura, please send an email to Nicholas Gwatai at gwatainicholas@gmail. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within MyKura, please send an email to Nicholas Gwatai at nicholas@myvotemykura.co.ke . All security vulnerabilities will be promptly addressed.
 
 ## License
 
