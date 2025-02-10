@@ -1,6 +1,6 @@
 # MyKura
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://www.myvotemykura.co.ke/assets/images/mykura-new-logo.jpg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://myvotemykura.co.ke" target="_blank"><img src="https://www.myvotemykura.co.ke/assets/images/mykura-new-logo.jpg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -8,24 +8,24 @@
 
 ## About MyKura
 
-MyKura is a remote election management and voting system, whose main purpose is to ensure secure and verifiable voting utilizing blockchain concepts. I @gwatai made the project open source to invite more software engineers to save democracy for the following reasons:
+MyKura is a remote election management and voting system, whose main purpose is to ensure secure and verifiable voting utilizing blockchain concepts. @gwatai made the project open source to invite more software engineers to save democracy for the following reasons:
 
 - Rigged elections cause corruption
 - Physical voting causes a lot of pain such as the closing down of schools, no working, and CO2 emissions
-- Murder eg in Kenya Chris Musando(RIP) a critical official in charge of ICT was brutally murdered in the Kenya 2017 General elections
+- Murder of Phsical elections officials eg in Kenya Chris Musando(RIP) a critical official in charge of ICT was brutally murdered in the Kenya 2017 General elections
 - The above is mainly because of great the human input required in managing a physical election
-- ... add more
+- ... add many more reasons
 
 MyKura is a Secure, accessible, and fast voting platform
 
 ## Installing
 
-MyKura APIs are built using laravel(11), checkout  [documentation](https://laravel.com/docs) 
+MyKura APIs are built using The laravel Framework(v11.41.2), checkout  [documentation](https://laravel.com/docs) 
 
 
-## Laravel Sponsors
+## Sponsoring
 
-We would like to sponsors for funding MyKura development. If you are interested in becoming a sponsor, please contact @gwatai trough [MyKura's website](https://myvotemykura.co.ke) contact page.
+We would like to invite sponsors for funding MyKura development. If you are interested in becoming a sponsor, please contact @gwatai trough [MyKura's website](https://myvotemykura.co.ke) contact page or by emailing gwatainicholas@gmail.com.
 
 ### Premium Partners
 
