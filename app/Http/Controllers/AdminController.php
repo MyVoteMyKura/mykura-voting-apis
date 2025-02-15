@@ -18,9 +18,11 @@ class AdminController extends Controller
             'data' => $voters
         ]);
     }
-    
+
     public function assignPosition(Request $request)
     {
+        Gate::inspect('create', Admin::class);
+
         $validated = $request->validate([
             'voter_id' => 'required|numeric|max_digits:4|exists:voters,id',
             'position_id' => 'required|numeric|exists:positions,id'

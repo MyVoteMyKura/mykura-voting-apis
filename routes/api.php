@@ -12,7 +12,8 @@ Route::get('/user', function (Request $request) {
 //Public routes
 //POST APIs
 Route::post('/register', [AdminController::class, 'createAdmin']);
-Route::post('/login', [AdminController::class, 'adminLogin']);
+Route::post('/admin/login', [AdminController::class, 'adminLogin']);
+Route::post('/admin', [AdminController::class, 'createAdmin']);
 Route::post('/signup', [VoterController::class, 'signUp']);
 Route::post('/google/login', [VoterController::class, 'googleLogin']);
 
@@ -23,8 +24,9 @@ Route::get('/dashboard', [VoterController::class, 'getResults']);
 
 
 //Protected routes
-Route::post('/assign-position', [AdminController::class, 'assignPosition'])->middleware('auth:sanctum');
+Route::post('/voter/assign-position', [AdminController::class, 'assignPosition'])->middleware('auth:sanctum');
 Route::post('/vote', [VoterController::class, 'vote'])->middleware('auth:sanctum');
 Route::get('/candidates', [VoterController::class, 'getCandidatesV2'])->middleware('auth:sanctum');
 Route::get('/vvpat', [VoterController::class, 'vvpat'])->middleware('auth:sanctum');
 Route::get('/voters', [AdminController::class, 'getVoters'])->middleware('auth:sanctum');
+Route::post('/create/position', [AdminController::class, 'createPosition'])->middleware('auth:sanctum');

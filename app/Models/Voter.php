@@ -9,7 +9,8 @@ use Laravel\Sanctum\HasApiTokens;
 
 class Voter extends Authenticatable
 {
-    
+    use HasApiTokens;
+
     protected $fillable =[
         'name',
         'phone',

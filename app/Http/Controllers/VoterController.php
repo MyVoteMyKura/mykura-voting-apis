@@ -65,6 +65,26 @@ class VoterController extends Controller
             ]
         ]);
     }
+    private function checkIfVoted($details): bool
+    {
+
+        Vote::chunk(100, function ($users) use ($details, &$existingUser) {
+            $existingUser = $users->first(function ($user) use ($details) {
+                if ($user->voter_id == $details['id']) {
+                    return true; // does exist
+                }
+
+                return false; // does not exist
+            });
+        });
+
+
+        if ($existingUser) {
+            return true; // does  exist/////
+        }
+
+        return false; // does not exists
+    }
 
     public function getCandidatesV2(Request $request)
     {
