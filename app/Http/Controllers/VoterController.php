@@ -46,7 +46,7 @@ class VoterController extends Controller
 
 
     }
-    
+
     public function vvpat()
     {
         $vvpat = Vote::with(['position', 'voter'])->get();
@@ -108,7 +108,7 @@ class VoterController extends Controller
             'data' => $candidate
         ]);
     }
-    
+
     public function vote(Request $request)
     {
         try {
@@ -160,6 +160,26 @@ class VoterController extends Controller
                 'message' => 'Failed to cast vote'
             ], 500);
         }
+    }
+    private function checkIfUserExists($details): bool
+    {
+
+        Voter::chunk(100, function ($users) use ($details, &$existingUser) {
+            $existingUser = $users->first(function ($user) use ($details) {
+                if ($user->email === $details['email'] || $user->pfNumber === $details['pfNumber'] || $user->phone === $details['phone']) {
+                    return true; // does exist
+                }
+
+                return false; // does not exist
+            });
+        });
+
+
+        if ($existingUser) {
+            return true; // does not exist/////
+        }
+
+        return false; // does exists
     }
     public function signUp(Request $request)
     {
