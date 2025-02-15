@@ -2,10 +2,6 @@
 
 <p align="center"><a href="https://myvotemykura.co.ke" target="_blank"><img src="https://www.myvotemykura.co.ke/assets/images/mykura-new-logo.jpg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-</p>
-
 ## About MyKura
 
 MyKura is a remote election management and voting system, whose main purpose is to ensure secure and verifiable voting utilizing blockchain concepts. @gwatai made the project open source to invite more software engineers to save democracy for the following reasons:
