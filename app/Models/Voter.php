@@ -6,10 +6,11 @@ namespace App\Models;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Laravel\Sanctum\HasApiTokens;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Voter extends Authenticatable
 {
-    use HasApiTokens;
+    use HasApiTokens, HasFactory;
 
     protected $fillable =[
         'name',
@@ -22,7 +23,6 @@ class Voter extends Authenticatable
         'ip_address',
         'inline_url',
         'secret',
-        'balance'
     ];
 
 
@@ -34,7 +34,6 @@ class Voter extends Authenticatable
         'secret' => 'encrypted',
         'inline_url' => 'encrypted',
         'google_id' => 'encrypted',
-        'balance' => 'encrypted'
 
     ];
 

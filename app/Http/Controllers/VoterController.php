@@ -152,7 +152,7 @@ class VoterController extends Controller
                         ->whereNotNull('position_id')
                         ->firstOrFail();
 
-                    $currentVoteCount = $candidate->votes()->exists() ? $candidate->votes()->sum('count') : 0;
+                    $currentVoteCount = $candidate->votes()->exists() ? $candidate->votes()->max('count') : 0;
 
                     $vote = new Vote();
 
@@ -163,6 +163,7 @@ class VoterController extends Controller
 
                     $vote->save();
                 }
+
                 DB::commit();
 
                 return response()->json([
@@ -274,8 +275,12 @@ class VoterController extends Controller
                                 'count' => $userVotes->max('count')
                             ];
                         })
-                        ->values()->toArray()
-                ];
+                        ->values()->toArray(),
+                    'total' => $votes->groupBy('user_id')
+                        ->map(function ($userVotes) {
+                            return $userVotes->max('count');
+                        })
+                        ->sum()];
             })->values();
 
             return response()->json([
