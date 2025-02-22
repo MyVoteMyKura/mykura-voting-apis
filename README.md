@@ -1,6 +1,6 @@
 # MyKura
 
-<p align="center"><a href="https://myvotemykura.co.ke" target="_blank"><img src="https://www.myvotemykura.co.ke/assets/images/mykura-new-logo.jpg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="https://myvotemykura.co.ke" target="_blank"><img src="https://www.myvotemykura.co.ke/assets/images/mykura-new-logo.jpg" width="400" alt=MyKura Logo"></a></p>
 
 ## About MyKura
 
